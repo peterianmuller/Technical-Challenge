@@ -7,7 +7,6 @@ import { getCurrentIssueId, getIssue, getIssues } from "./api.js";
 function Dropdown(props) {
   let options = ["Unknown", "Done", "In progress", "To Do"];
   let selected = props.status;
-  debugger;
   return (
     <div>
       <select className="status-menu">
