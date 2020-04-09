@@ -1,51 +1,31 @@
+/* new style */
+
 body {
-  font: 14px "Century Gothic", Futura, sans-serif;
-  margin: 20px;
+  font-size: 16px;
 }
 
-ol,
-ul {
-  padding-left: 30px;
+.hide {
+  display: none;
 }
 
-.board-row:after {
-  clear: both;
-  content: "";
-  display: table;
-}
-
-.status {
-  margin-bottom: 10px;
-}
-
-.square {
-  background: #fff;
-  border: 1px solid #999;
-  float: left;
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 34px;
-  height: 34px;
-  margin-right: -1px;
-  margin-top: -1px;
+.task-list {
+  list-style: none;
   padding: 0;
-  text-align: center;
-  width: 34px;
 }
 
-.square:focus {
-  outline: none;
-}
-
-.kbd-navigation .square:focus {
-  background: #ddd;
-}
-
-.game {
+.task-list-item {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
 }
 
-.game-info {
-  margin-left: 20px;
+.subtask-status {
+  font-weight: 800;
+  padding: 2px;
+}
+
+.status-menu {
+  border: none;
+  height: 2rem;
+  width: 10rem;
+  outline: none;
 }
